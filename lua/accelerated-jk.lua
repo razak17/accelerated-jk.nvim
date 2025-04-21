@@ -57,7 +57,7 @@ local last_time = 0
 
 function M.command(cmd)
   if vim.v.count > 0 then
-    vim.cmd('normal!' .. vim.v.count .. cmd)
+    vim.cmd('normal!' .. "m'" .. vim.v.count .. cmd)
     return
   end
 
